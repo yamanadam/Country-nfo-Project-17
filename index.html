@@ -14,15 +14,20 @@
   </head>
   <body class="text-center">
     <div class="main">
-      <h1 class="text-light display-3 py-5">Country Information</h1>
       <form action="#">
-        <select class="select" name="country" id="country">
-          <option value="Select a country">Select a country</option>
+        <h1 class="text-light display-3 py-2">Country Information</h1>
+
+        <select class="select me-4" name="country" id="country">
+          <option value="Select a country" selected disabled>
+            Select a country
+          </option>
+          <p class="msg"></p>
         </select>
+
+        <div class="result">
+          <ul></ul>
+        </div>
       </form>
-      <div class="result">
-        <ul></ul>
-      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

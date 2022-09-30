@@ -16,9 +16,56 @@ body {
 }
 
 .select {
-  min-width: 20%;
+  min-width: 15%;
+  max-width: 8rem;
   height: 2.1rem;
   text-align: center;
   border-radius: 7px;
   font-weight: 600;
+}
+
+.result {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 30rem;
+
+  color: black;
+  margin: 2rem auto;
+}
+.result ul {
+  list-style-type: none;
+}
+
+li img {
+  min-width: 5rem;
+  max-width: 10rem;
+  padding: 0.8rem;
+}
+
+li {
+  font-weight: 500;
+}
+
+li span {
+  font-weight: 900;
+}
+
+li.maps {
+  padding-bottom: 0.6rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .result {
+    width: 20rem;
+
+    margin: 2rem auto;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .result {
+    width: 15rem;
+
+    margin: 2rem auto;
+  }
 }
